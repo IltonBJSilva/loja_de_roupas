@@ -92,10 +92,3 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Estilos para telas menores, como smartphones */
-@media only screen and (max-width: 768px) {
-    /* Exemplos de ajustes de estilo */
-    .banner-principal h1 {
-        font-size: 2rem; /* Reduzir o tamanho da fonte */
-    }
-}
