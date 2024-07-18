@@ -147,7 +147,6 @@ nav ul li a:hover {
 .produto img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 
 .produto h3 {
@@ -332,4 +331,14 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.btn-ver-detalhes {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-ver-detalhes:hover {
+    background-color: #e64a19;
 }
