@@ -27,6 +27,8 @@ header .logo a {
     font-size: 24px;
 }
 
+/*Barra de navegação*/
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -40,4 +42,49 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Banner Principal */
+.banner-principal {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-principal img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px); /* Aplica um desfoque inicial */
+    transition: filter 0.3s ease; /* Transição suave de 0.3 segundos */
+}
+
+.banner-principal img:hover {
+    filter: none; /* Remove o desfoque ao passar o mouse */
+}
+
+
+.banner-principal .cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-principal .cta h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo do quadrado */
+    border: 2px solid #fff; /* Borda branca */
+    padding: 20px;
+    color:black
+}
+
+.banner-principal .cta .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
