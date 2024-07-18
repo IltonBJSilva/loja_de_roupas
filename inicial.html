@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!-- Header -->
     <header>
         <div class="logo">
@@ -24,6 +23,12 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <div class="carrinho">
+            <a href="carrinho.html">
+                <img src="media/icons/carrinho.svg" alt="Carrinho">
+                <span class="carrinho-notificacao">+1</span>
+            </a>
+        </div>
     </header>
 
     <!-- Banner Principal -->
@@ -49,31 +54,31 @@
                 <h3>Camisa Verde</h3>
                 <p>Melhor camisa no mercado por sua qualidade e estilo.</p>
                 <p class="preco">R$100,00</p>
-                <a href="produto.html" class="btn">Ver Detalhes</a>
+                <a href="templates_produtos/detalhes_produto_00.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
             </div>
             <div class="produto">
-                <img src="media/produtos/produto01.png" alt="Produto 1">
+                <img src="media/produtos/produto01.png" alt="Produto 2">
                 <h3>Calça Jeans Skinny Feminina Escura</h3>
                 <p> Perfeita para um visual moderno e confortável.</p>
                 <p class="preco">R$79,90</p>
                 <a href="produto.html" class="btn">Ver Detalhes</a>
             </div>
             <div class="produto">
-                <img src="media/produtos/produto02.webp" alt="Produto 1">
+                <img src="media/produtos/produto02.webp" alt="Produto 3">
                 <h3>Camisa Xadrez Feminina Com Brilho Preta</h3>
                 <p>Estilo xadrez com um toque de brilho, ideal para ocasiões especiais.</p>
                 <p class="preco">R$89,90</p>
                 <a href="produto02.html" class="btn">Ver Detalhes</a>
             </div>
             <div class="produto">
-                <img src="media/produtos/produto03.webp" alt="Produto 1">
+                <img src="media/produtos/produto03.webp" alt="Produto 4">
                 <h3>Calça Jeans Skinny Feminina Levanta Bumbum Clara</h3>
                 <p>Modelagem que realça o bumbum com conforto e estilo.</p>
                 <p class="preco">R$79,90</p>
                 <a href="produto.html" class="btn">Ver Detalhes</a>
             </div>
             <div class="produto">
-                <img src="media/produtos/produto05.webp" alt="Produto 1">
+                <img src="media/produtos/produto05.webp" alt="Produto 5">
                 <h3>Conjunto Infantil Verão Masculino NY - City Marinho</h3>
                 <p>Camiseta em meia malha na cor marinho com estampa frontal Ny-City, possui gola redonda, super
                     estilosa. </p>
@@ -81,15 +86,40 @@
                 <a href="produto.html" class="btn">Ver Detalhes</a>
             </div>
             <div class="produto">
-                <img src="media/produtos/produto06.png" alt="Produto 1">
+                <img src="media/produtos/produto06.png" alt="Produto 6">
                 <h3>Short-saia Salopete Jardineira Infantil Brinde | Alça Retira</h3>
-                <p>Modelagem e tecido de alta qualidade e design desenvolvido pela pela própria marca.</p>
+                <p>Modelagem e tecido de alta qualidade e design desenvolvido pela própria marca.</p>
                 <p class="preco">R$79</p>
                 <a href="produto.html" class="btn">Ver Detalhes</a>
             </div>
         </div>
     </section>
 
+    
+
+
+    <!-- Página do Produto -->
+    <section class="pagina-produto">
+        <img src="media/produtos/produto00.webp" alt="Produto 1">
+        <h2>Produto 1</h2>
+        <p>Descrição detalhada do produto.</p>
+        <p>R$100,00</p>
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho" name="tamanho">
+            <option value="p">P</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+        </select>
+        <label for="cor">Cor:</label>
+        <select id="cor" name="cor">
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="preto">Preto</option>
+        </select>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        <a href="entrega.html" class="btn">Comprar</a>
+    </section>
 
 </body>
 
