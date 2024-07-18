@@ -297,3 +297,39 @@ footer {
 .sobre-nos h2 {
     margin-bottom: 20px;
 }
+
+/* Página de Entrega/Endereço */
+.pagina-entrega {
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-entrega form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pagina-entrega form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.pagina-entrega form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagina-entrega form .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
