@@ -20,7 +20,7 @@
                 <li><a href="inicial.html">Home</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="carrinho">
@@ -31,73 +31,35 @@
         </div>
     </header>
 
-    <!-- Banner Principal -->
-    <section class="banner-principal">
-        <img src="media/estrutura/banner.png" alt="Promoção Especial">
-        <div class="cta">
-            <h1>Compre Agora</h1>
-            <a href="produtos.html" class="btn">Saiba Mais</a>
-        </div>
+    <!-- Página de Entrega/Endereço -->
+    <section class="pagina-entrega">
+        <h2>Informações de Entrega</h2>
+        <form action="index.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            <a id="finalizar-compra" class="btn">Finalizar Compra</a>
+        </form>
     </section>
 
-    <!-- Seção de Produtos -->
-    <section class="produtos">
-        <h2>Produtos</h2>
-        <div class="categorias">
-            <button>Masculino</button>
-            <button>Feminino</button>
-            <button>Infantil</button>
-        </div>
-        <div class="lista-produtos">
-            <div class="produto">
-                <img src="media/produtos/produto00.webp" alt="Produto 0">
-                <h3>Camisa Verde</h3>
-                <p>Melhor camisa no mercado por sua qualidade e estilo.</p>
-                <p class="preco">R$100,00</p>
-                <a href="templates_produtos/detalhes_produto_00.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto">
-                <img src="media/produtos/produto01.png" alt="Produto 1">
-                <h3>Calça Jeans Skinny Feminina Escura</h3>
-                <p> Perfeita para um visual moderno e confortável.</p>
-                <p class="preco">R$79,90</p>
-                <a href="templates_produtos/detalhes_produto_01.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto">
-                <img src="media/produtos/produto02.webp" alt="Produto 2">
-                <h3>Camisa Xadrez Feminina Com Brilho Preta</h3>
-                <p>Estilo xadrez com um toque de brilho, ideal para ocasiões especiais.</p>
-                <p class="preco">R$89,90</p>
-                <a href="templates_produtos/detalhes_produto_02.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto">
-                <img src="media/produtos/produto03.webp" alt="Produto 3">
-                <h3>Calça Jeans Skinny Feminina Levanta Bumbum Clara</h3>
-                <p>Modelagem que realça o bumbum com conforto e estilo.</p>
-                <p class="preco">R$79,90</p>
-                <a href="templates_produtos/detalhes_produto_03.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto">
-                <img src="media/produtos/produto04.webp" alt="Produto 4">
-                <h3>Conjunto Infantil Verão Masculino NY - City Marinho</h3>
-                <p>Camiseta em meia malha na cor marinho com estampa frontal Ny-City, possui gola redonda, super
-                    estilosa. </p>
-                <p class="preco">R$25,04</p>
-                <a href="templates_produtos/detalhes_produto_04.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto">
-                <img src="media/produtos/produto05.png" alt="Produto 5">
-                <h3>Short-saia Salopete Jardineira Infantil Brinde | Alça Retira</h3>
-                <p>Modelagem e tecido de alta qualidade e design desenvolvido pela própria marca.</p>
-                <p class="preco">R$79</p>
-                <a href="templates_produtos/detalhes_produto_05.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-        </div>
-    </section>
+
 
     <footer>
         <p>&copy; 2024 Loja de Roupas. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById('finalizar-compra').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            alert('Compra finalizada com sucesso!');
+            window.location.href = 'inicial.html';
+        });
+    </script>
 </body>
 
 </html>
