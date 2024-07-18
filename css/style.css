@@ -288,3 +288,12 @@ footer {
     align-items: center;
     justify-content: center;
 }
+/* Seção Sobre Nós */
+.sobre-nos {
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    margin-bottom: 20px;
+}
