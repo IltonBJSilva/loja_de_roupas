@@ -92,3 +92,53 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Seção de Produtos */
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos .categorias {
+    margin-bottom: 20px;
+}
+
+.produtos .categorias button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.produtos .lista-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produtos .produto {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produtos .produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produtos .produto .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
