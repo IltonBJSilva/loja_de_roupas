@@ -54,12 +54,15 @@ nav ul li a {
 .banner-principal img {
     width: 100%;
     height: auto;
-    filter: blur(5px); /* Aplica um desfoque inicial */
+    filter: blur(3px); /* Aplica um desfoque inicial */
     transition: filter 0.3s ease; /* Transição suave de 0.3 segundos */
+
 }
 
 .banner-principal img:hover {
     filter: none; /* Remove o desfoque ao passar o mouse */
+    border-color: transparent; /* Remove a borda ao passar o mouse */
+
 }
 
 
@@ -87,4 +90,12 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Estilos para telas menores, como smartphones */
+@media only screen and (max-width: 768px) {
+    /* Exemplos de ajustes de estilo */
+    .banner-principal h1 {
+        font-size: 2rem; /* Reduzir o tamanho da fonte */
+    }
 }
