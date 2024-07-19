@@ -28,6 +28,9 @@ header .logo a {
 }
 
 /* Barra de navegação */
+
+
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -252,7 +255,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -341,4 +343,66 @@ footer {
 }
 .btn-ver-detalhes:hover {
     background-color: #e64a19;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .banner-principal .cta h1 {
+        font-size: 32px;
+    }
+
+    .produtos .produto {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias button {
+        margin: 0 0px;
+
+    }
+
+    .banner-principal .cta h1 {
+        font-size: 24px;
+    }
+
+    .produtos .produto {
+        width: calc(100% - 40px);
+    }
+
+    .pagina-entrega form {
+        padding: 10px;
+    }
+
+    .pagina-entrega form label {
+        margin: 5px 0 2px;
+    }
+
+    .pagina-entrega form input {
+        padding: 5px;
+    }
+
+    .pagina-entrega form .btn {
+        padding: 10px;
+    }
+}
+
+/* Smartphones (Paisagem) */
+@media (max-width: 576px) {
+    .banner-principal .cta h1 {
+        font-size: 28px;
+    }
+
+    .produtos .produto {
+        width: calc(100% - 40px);
+    }
+
+    .pagina-entrega form {
+        padding: 15px;
+    }
 }
