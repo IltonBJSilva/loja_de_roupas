@@ -1,104 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <a href="inicial.html">Loja de roupas</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="inicial.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="sobre.html#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="carrinho">
-            <a href="carrinho.html">
-                <img src="media/icons/carrinho.svg" alt="Carrinho">
-                <span class="carrinho-notificacao">+1</span>
-            </a>
-        </div>
-    </header>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <a href="inicial.html" aria-label="Página inicial da Loja de Roupas">Loja de Roupas</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="inicial.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="sobre.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="carrinho">
+      <a href="carrinho.html" aria-label="Ir para o carrinho">
+        <img src="media/icons/carrinho.svg" alt="Ícone do Carrinho">
+        <span class="carrinho-notificacao">+1</span>
+      </a>
+    </div>
+  </header>
 
-    <!-- Banner Principal -->
-    <section class="banner-principal">
-        <img src="media/estrutura/banner.png" alt="Promoção Especial">
-        <div class="cta">
-            <h1>Compre Agora</h1>
-            <a href="produtos.html" class="btn">Saiba Mais</a>
-        </div>
-    </section>
+  <!-- Banner Principal -->
+  <section class="banner-principal" aria-label="Promoção em destaque">
+    <img src="media/estrutura/banner.png" alt="Banner de Promoção Especial">
+    <div class="cta">
+      <h1>Compre Agora</h1>
+      <a href="produtos.html" class="btn">Saiba Mais</a>
+    </div>
+  </section>
 
+  <!-- Conteúdo Principal -->
+  <main>
     <!-- Seção de Produtos -->
-    <section class="produtos">
-        <h2>Produtos</h2>
-        <div class="categorias">
-            <button data-category="todos" href>Todos</button>
-            <button data-category="masculino">Masculino</button>
-            <button data-category="feminino">Feminino</button>
-            <button data-category="infantil">Infantil</button>
-        </div>
-        <div class="lista-produtos">
-            <div class="produto masculino">
-                <img src="media/produtos/produto00.webp" alt="Produto 0">
-                <h3>Camisa Verde</h3>
-                <p>Melhor camisa no mercado por sua qualidade e estilo.</p>
-                <p class="preco">R$100,00</p>
-                <a href="templates_produtos/detalhes_produto_00.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto feminino">
-                <img src="media/produtos/produto01.png" alt="Produto 1">
-                <h3>Calça Jeans Skinny Feminina Escura</h3>
-                <p>Perfeita para um visual moderno e confortável.</p>
-                <p class="preco">R$79,90</p>
-                <a href="templates_produtos/detalhes_produto_01.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto feminino">
-                <img src="media/produtos/produto02.webp" alt="Produto 2">
-                <h3>Camisa Xadrez Feminina Com Brilho Preta</h3>
-                <p>Estilo xadrez com um toque de brilho, ideal para ocasiões especiais.</p>
-                <p class="preco">R$89,90</p>
-                <a href="templates_produtos/detalhes_produto_02.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto feminino">
-                <img src="media/produtos/produto03.webp" alt="Produto 3">
-                <h3>Calça Jeans Skinny Feminina Levanta Bumbum Clara</h3>
-                <p>Modelagem que realça o bumbum com conforto e estilo.</p>
-                <p class="preco">R$79,90</p>
-                <a href="templates_produtos/detalhes_produto_03.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto infantil">
-                <img src="media/produtos/produto04.webp" alt="Produto 4">
-                <h3>Conjunto Infantil Verão Masculino NY - City Marinho</h3>
-                <p>Camiseta em meia malha na cor marinho com estampa frontal Ny-City, possui gola redonda, super estilosa.</p>
-                <p class="preco">R$25,04</p>
-                <a href="templates_produtos/detalhes_produto_04.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-            <div class="produto infantil">
-                <img src="media/produtos/produto05.png" alt="Produto 5">
-                <h3>Short-saia Salopete Jardineira Infantil Brinde | Alça Retira</h3>
-                <p>Modelagem e tecido de alta qualidade e design desenvolvido pela própria marca.</p>
-                <p class="preco">R$79</p>
-                <a href="templates_produtos/detalhes_produto_05.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
-            </div>
-        </div>
+    <section class="produtos" aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Produtos</h2>
+
+      <div class="categorias" aria-label="Categorias de produtos">
+        <button data-category="todos">Todos</button>
+        <button data-category="masculino">Masculino</button>
+        <button data-category="feminino">Feminino</button>
+        <button data-category="infantil">Infantil</button>
+      </div>
+
+      <div class="lista-produtos">
+        <!-- Produto 1 -->
+        <article class="produto masculino">
+          <img src="media/produtos/produto00.webp" alt="Camisa Verde">
+          <h3>Camisa Verde</h3>
+          <p>Melhor camisa no mercado por sua qualidade e estilo.</p>
+          <p class="preco">R$100,00</p>
+          <a href="templates_produtos/detalhes_produto_00.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="produto feminino">
+          <img src="media/produtos/produto01.png" alt="Calça Jeans Skinny Feminina Escura">
+          <h3>Calça Jeans Skinny Feminina Escura</h3>
+          <p>Perfeita para um visual moderno e confortável.</p>
+          <p class="preco">R$79,90</p>
+          <a href="templates_produtos/detalhes_produto_01.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="produto feminino">
+          <img src="media/produtos/produto02.webp" alt="Camisa Xadrez Feminina com Brilho Preta">
+          <h3>Camisa Xadrez Feminina com Brilho Preta</h3>
+          <p>Estilo xadrez com um toque de brilho, ideal para ocasiões especiais.</p>
+          <p class="preco">R$89,90</p>
+          <a href="templates_produtos/detalhes_produto_02.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="produto feminino">
+          <img src="media/produtos/produto03.webp" alt="Calça Jeans Skinny Feminina Clara">
+          <h3>Calça Jeans Skinny Feminina Levanta Bumbum Clara</h3>
+          <p>Modelagem que realça o bumbum com conforto e estilo.</p>
+          <p class="preco">R$79,90</p>
+          <a href="templates_produtos/detalhes_produto_03.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+
+        <!-- Produto 5 -->
+        <article class="produto infantil">
+          <img src="media/produtos/produto04.webp" alt="Conjunto Infantil Verão Masculino NY - City Marinho">
+          <h3>Conjunto Infantil Verão Masculino NY - City Marinho</h3>
+          <p>Camiseta em meia malha na cor marinho com estampa frontal NY-City, super estilosa.</p>
+          <p class="preco">R$25,04</p>
+          <a href="templates_produtos/detalhes_produto_04.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+
+        <!-- Produto 6 -->
+        <article class="produto infantil">
+          <img src="media/produtos/produto05.png" alt="Short-saia Salopete Jardineira Infantil com Brinde">
+          <h3>Short-saia Salopete Jardineira Infantil Brinde</h3>
+          <p>Modelagem e tecido de alta qualidade com design exclusivo.</p>
+          <p class="preco">R$79,00</p>
+          <a href="templates_produtos/detalhes_produto_05.html" class="btn btn-ver-detalhes">Ver Detalhes</a>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 Loja de Roupas. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Loja de Roupas. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
